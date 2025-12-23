@@ -10,7 +10,7 @@ import project4 from "@/assets/project-4.jpg";
 
 const Home = () => {
   return (
-    <div className="min-h-screen">
+    <div className="dark min-h-screen">
       {/* Hero Section */}
       <section className="relative h-[600px] lg:h-[700px] flex items-center justify-center overflow-hidden">
         <div 
@@ -27,17 +27,12 @@ const Home = () => {
               <span className="text-primary">Santa Catarina</span>
             </h1>
             <p className="text-lg sm:text-xl lg:text-2xl mb-8 text-gray-200">
-              Modelagem, coordenação e compatibilização de projetos com excelência e tecnologia de ponta.
+              Soluções completas, com alta confiabilidade, em todas as disciplinas que seu projeto precisa.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/servicos">
                 <Button size="lg" className="w-full sm:w-auto text-base font-heading">
                   CONHEÇA NOSSOS SERVIÇOS
-                </Button>
-              </Link>
-              <Link to="/contato">
-                <Button size="lg" variant="outline" className="w-full sm:w-auto text-base font-heading bg-white/10 backdrop-blur-sm border-white text-white hover:bg-white hover:text-graphite">
-                  FALE CONOSCO
                 </Button>
               </Link>
             </div>
@@ -52,7 +47,7 @@ const Home = () => {
             <h2 className="font-heading font-bold text-3xl lg:text-4xl mb-4 text-foreground">
               Por que escolher a Engeplanti?
             </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            <p className="text-foreground text-lg max-w-2xl mx-auto">
               Combinamos experiência técnica com tecnologia de ponta para entregar projetos excepcionais.
             </p>
           </div>
@@ -64,7 +59,7 @@ const Home = () => {
                   <Award className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="font-heading font-semibold text-xl mb-3">Excelência Operacional</h3>
-                <p className="text-muted-foreground">
+                <p className="text--foreground">
                   Mais de 1 milhão de m² projetados com a mais alta qualidade e precisão técnica.
                 </p>
               </CardContent>
@@ -76,7 +71,7 @@ const Home = () => {
                   <Clock className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="font-heading font-semibold text-xl mb-3">Disponibilidade Total</h3>
-                <p className="text-muted-foreground">
+                <p className="text-foreground">
                   Atendimento ágil e suporte completo em todas as etapas do seu projeto.
                 </p>
               </CardContent>
@@ -88,7 +83,7 @@ const Home = () => {
                   <Users className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="font-heading font-semibold text-xl mb-3">Liderança em Serviços</h3>
-                <p className="text-muted-foreground">
+                <p className="text-foreground">
                   Referência em projetos BIM com atuação em mais de 10 disciplinas diferentes.
                 </p>
               </CardContent>
@@ -98,11 +93,11 @@ const Home = () => {
       </section>
 
       {/* Serviços */}
-      <section className="py-16 lg:py-24">
+      <section className="py-16 lg:py-24 bg-secondary">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="font-heading font-bold text-3xl lg:text-4xl mb-4">Nossos Serviços</h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            <h2 className="font-heading font-bold text-3xl text-foreground lg:text-4xl mb-4">Nossos Serviços</h2>
+            <p className="text-foreground text-lg max-w-2xl mx-auto">
               Soluções completas em BIM para todas as etapas do seu projeto.
             </p>
           </div>
@@ -127,10 +122,34 @@ const Home = () => {
 
           <div className="text-center mt-10">
             <Link to="/servicos">
-              <Button size="lg" variant="outline" className="font-heading">
+              <Button size="lg" className="font-heading">
                 VER TODOS OS SERVIÇOS
               </Button>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Experiencia em numeros */}
+      <section className="py-16 lg:py-24 bg-secondary">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="font-heading font-bold text-3xl text-foreground lg:text-4xl mb-4">Nossa Experiência em Números</h2> 
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            {[
+              { number: "+1M", text: "m² Projetados" },
+              { number: "+30", text: "Disciplinas BIM" },
+              { number: "#1", text: "Santa Catarina" }
+            ].map((data, index) => (
+              <Card key={index}>
+                <CardContent className="flex flex-col items-center gap-4 p-8 rounded-lg border border-primary">
+                  <h1 className="font-heading font-bold text-7xl">{data.number}</h1>
+                  <h2 className="font-heading font-semibold text-2xl text-foreground">{data.text}</h2>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
@@ -139,8 +158,8 @@ const Home = () => {
       <section className="py-16 lg:py-24 bg-secondary">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="font-heading font-bold text-3xl lg:text-4xl mb-4">Projetos em Destaque</h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            <h2 className="font-heading font-bold text-3xl text-foreground lg:text-4xl mb-4">Projetos em Destaque</h2>
+            <p className="text-foreground text-lg max-w-2xl mx-auto">
               Conheça alguns dos projetos que demonstram nossa capacidade técnica e inovação.
             </p>
           </div>
@@ -170,7 +189,7 @@ const Home = () => {
 
           <div className="text-center mt-10">
             <Link to="/projetos">
-              <Button size="lg" variant="outline" className="font-heading">
+              <Button size="lg" className="font-heading">
                 VER TODOS OS PROJETOS
               </Button>
             </Link>
