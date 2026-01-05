@@ -54,7 +54,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="dark min-h-screen">
       {/* Hero */}
       <section className="bg-gradient-to-br from-primary to-accent text-white py-20 lg:py-28">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -70,7 +70,7 @@ const Services = () => {
       </section>
 
       {/* Serviços Detalhados */}
-      <section className="py-16 lg:py-24">
+      <section className="py-16 lg:py-24 bg-secondary">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {services.map((service, index) => (
@@ -96,7 +96,7 @@ const Services = () => {
       {/* Metodologia */}
       <section className="py-16 lg:py-24 bg-secondary">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-heading font-bold text-3xl lg:text-4xl mb-12 text-center">
+          <h2 className="font-heading font-bold text-3xl lg:text-4xl mb-12 text-center text-foreground">
             Nossa Metodologia BIM
           </h2>
           <div className="max-w-5xl mx-auto">
@@ -111,7 +111,7 @@ const Services = () => {
                   <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-4 font-heading font-bold text-xl">
                     {phase.step}
                   </div>
-                  <h3 className="font-heading font-semibold text-xl mb-2">{phase.title}</h3>
+                  <h3 className="font-heading font-semibold text-xl mb-2 text-secondary-foreground">{phase.title}</h3>
                   <p className="text-sm text-muted-foreground">{phase.desc}</p>
                   {index < 3 && (
                     <div className="hidden md:block absolute top-8 left-1/2 w-full h-0.5 bg-primary/30" style={{ transform: 'translateX(50%)' }} />
