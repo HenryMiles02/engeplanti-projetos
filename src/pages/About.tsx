@@ -21,8 +21,8 @@ const About = () => {
 
       {/* Nossa História */}
       <section className="py-16 lg:py-24 bg-secondary">
-        <div className="container flex items-center justify-around gap-14 px-5 sm:px-7 lg:px-9">
-          <div className="max-w-2xl">
+        <div className="container flex flex-col lg:flex-row items-center justify-around gap-14 px-5 sm:px-7 lg:px-9">
+          <div className="lg:max-w-2xl md:w-full">
             <h2 className="font-heading text-foreground font-bold text-3xl lg:text-4xl mb-8 text-center">
               Nossa História
             </h2>
@@ -38,7 +38,7 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="h-72">
+          <div className="md:h-full">
             <img 
               src={project1}
               alt="Equipe Engeplanti"
