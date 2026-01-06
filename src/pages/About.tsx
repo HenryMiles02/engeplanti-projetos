@@ -1,15 +1,16 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Target, Eye, Award } from "lucide-react";
+import project1 from "@/assets/project-1.jpg";
 
 const About = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen dark">
       {/* Hero */}
       <section className="bg-gradient-to-br from-primary to-accent text-white py-20 lg:py-28">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
             <h1 className="font-heading font-bold text-4xl lg:text-5xl mb-6">
-              Sobre a Engeplanti
+              Quem Somos
             </h1>
             <p className="text-lg lg:text-xl opacity-90">
               Líder em soluções BIM, transformando a engenharia brasileira com tecnologia e excelência.
@@ -19,23 +20,30 @@ const About = () => {
       </section>
 
       {/* Nossa História */}
-      <section className="py-16 lg:py-24">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-heading font-bold text-3xl lg:text-4xl mb-8 text-center">
-              Nossa Trajetória
+      <section className="py-16 lg:py-24 bg-secondary">
+        <div className="container flex items-center justify-around gap-14 px-5 sm:px-7 lg:px-9">
+          <div className="max-w-2xl">
+            <h2 className="font-heading text-foreground font-bold text-3xl lg:text-4xl mb-8 text-center">
+              Nossa História
             </h2>
             <div className="prose prose-lg max-w-none text-muted-foreground">
               <p className="mb-6">
-                A <span className="text-foreground font-semibold">Engeplanti Engenharia</span> nasceu com a missão de revolucionar o setor de projetos de engenharia em Santa Catarina. Ao longo dos anos, nos consolidamos como a maior empresa de projetos BIM do estado, oferecendo soluções inovadoras que integram tecnologia de ponta e expertise técnica.
+                A <span className="text-foreground font-semibold">Engeplanti Engenharia</span> nasceu da visão de transformar o mercado de projetos de engenharia através da tecnologia BIM (Building Information Modeling)
               </p>
               <p className="mb-6">
-                Nossa jornada é marcada pela busca constante por excelência operacional e pela satisfação de nossos clientes. Com uma equipe altamente qualificada e processos rigorosos de controle de qualidade, entregamos projetos que superam expectativas.
+                Com sede em Santa Catarina, nos tornamos a maior empresa de projetos BIM do estado, atendendo clientes em todo o território nacional com soluções de ponta em modelagem, coordenação e compatibilização de projetos.
               </p>
               <p>
-                Hoje, com <span className="text-primary font-semibold">mais de 1 milhão de m² projetados</span> e atuação em todo o território nacional, continuamos expandindo nossos horizontes e estabelecendo novos padrões no mercado de engenharia.
+                Nossa equipe multidisciplinar é formada por profissionais especializados que dominam <span className="text-primary font-semibold">mais de 10 disciplinas BIM</span>, garantindo integração perfeita e qualidade superior em cada projeto.
               </p>
             </div>
+          </div>
+          <div className="h-72">
+            <img 
+              src={project1}
+              alt="Equipe Engeplanti"
+              className="w-full h-full object-cover rounded-xl"
+            />
           </div>
         </div>
       </section>
@@ -79,32 +87,6 @@ const About = () => {
                 </p>
               </CardContent>
             </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Números */}
-      <section className="py-16 lg:py-24">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-heading font-bold text-3xl lg:text-4xl mb-12 text-center">
-            Nossa Força em Números
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {[
-              { number: "+1M", label: "m² Projetados" },
-              { number: "+10", label: "Disciplinas BIM" },
-              { number: "100%", label: "Nacional" },
-              { number: "#1", label: "Santa Catarina" }
-            ].map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-5xl lg:text-6xl font-heading font-bold text-primary mb-2">
-                  {stat.number}
-                </div>
-                <div className="text-lg text-muted-foreground font-medium">
-                  {stat.label}
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </section>

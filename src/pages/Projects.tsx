@@ -27,7 +27,7 @@ const Projects = () => {
     : projects.filter(p => p.type === filter);
 
   return (
-    <div className="min-h-screen">
+    <div className="dark min-h-screen">
       {/* Hero */}
       <section className="bg-gradient-to-br from-primary to-accent text-white py-20 lg:py-28">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -61,7 +61,7 @@ const Projects = () => {
       </section>
 
       {/* Grid de Projetos */}
-      <section className="py-16 lg:py-24">
+      <section className="bg-background py-16 lg:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredProjects.map((project, index) => (
