@@ -54,7 +54,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="dark min-h-screen">
+    <div className="min-h-screen dark">
       {/* Hero */}
       <section className="bg-gradient-to-br from-primary to-accent text-white py-20 lg:py-28">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
