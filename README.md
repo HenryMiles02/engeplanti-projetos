@@ -1,73 +1,112 @@
-# Welcome to your Lovable project
+# 🌱 Engeplanti Projetos e Supervisão
 
-## Project info
+Este projeto é uma **refatoração completa do site institucional da Engeplanti Projetos e Supervisão**, desenvolvido com foco em **modernização de layout, performance e boas práticas de desenvolvimento front-end**.
 
-**URL**: https://lovable.dev/projects/80c39f10-1b67-4b75-8c86-ad3406fc767f
+O objetivo principal foi transformar um site tradicional em uma **experiência moderna, responsiva e escalável**, servindo também como **projeto de portfólio** para demonstrar habilidades em desenvolvimento web.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🚀 Sobre o Projeto
 
-**Use Lovable**
+A proposta deste projeto foi recriar o site da Engeplanti utilizando tecnologias atuais e uma abordagem mais estruturada, com foco em:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/80c39f10-1b67-4b75-8c86-ad3406fc767f) and start prompting.
+- Melhorar a **experiência do usuário (UX)**
+- Criar uma interface mais **moderna e limpa (UI)**
+- Aplicar **boas práticas de componentização**
+- Garantir **responsividade em diferentes dispositivos**
+- Otimizar a *renderização**
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 🛠️ Tecnologias Utilizadas
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **React.js**
+- **TypeScript**
+- **Tailwind CSS**
+- **Vite**
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 💡 Principais Melhorias
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- 🔹 Refatoração completa do layout original  
+- 🔹 Criação de componentes reutilizáveis  
+- 🔹 Estrutura de projeto organizada  
+- 🔹 Implementação de **tema dark/light**  
+- 🔹 Melhor distribuição de conteúdo e hierarquia visual  
+- 🔹 Navegação mais fluida e moderna  
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🎨 Interface e Design
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+O projeto foi desenvolvido com foco em um visual:
 
-**Edit a file directly in GitHub**
+- Minimalista  
+- Profissional  
+- Responsivo  
+- Alinhado com a identidade visual da empresa  
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 📱 Responsividade
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+O site foi totalmente adaptado para:
 
-## What technologies are used for this project?
+- 📱 Mobile  
+- 💻 Desktop  
+- 📟 Tablets  
 
-This project is built with:
+Garantindo uma experiência consistente em qualquer dispositivo.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+## 📂 Estrutura do Projeto
 
-Simply open [Lovable](https://lovable.dev/projects/80c39f10-1b67-4b75-8c86-ad3406fc767f) and click on Share -> Publish.
+A aplicação segue uma arquitetura baseada em componentes:
 
-## Can I connect a custom domain to my Lovable project?
+src/
+├── components/
+├── pages/
+├── assets/
 
-Yes, you can!
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## ⚠️ Aviso Importante
+
+Este projeto foi desenvolvido **exclusivamente para fins de estudo e portfólio**.
+
+- Não possui vínculo oficial com a empresa  
+- Não deve ser utilizado como versão oficial  
+- Não está aberto para uso comercial ou redistribuição  
+
+---
+
+## 🧠 Aprendizados
+
+Durante o desenvolvimento, foram reforçados conceitos como:
+
+- Componentização em React  
+- Uso avançado de Tailwind  
+- Responsividade na prática  
+- Estruturação de projetos profissionais  
+
+---
+
+## 📸 Preview
+
+![Preview do Projeto](./src/assets/preview.png)
+
+---
+
+## 📌 Status do Projeto
+
+🚧 Em desenvolvimento / melhorias contínuas  
+
+---
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Carlos Henrique**  
+💼 Desenvolvedor Front-End  
