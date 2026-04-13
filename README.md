@@ -66,9 +66,12 @@ Garantindo uma experiência consistente em qualquer dispositivo.
 A aplicação segue uma arquitetura baseada em componentes:
 
 src/
-├── components/
-├── pages/
-├── assets/
+
+  ├── components/
+  
+  ├── pages/
+  
+  ├── assets/
 
 
 ---
